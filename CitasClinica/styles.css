@@ -1,0 +1,48 @@
+.header {
+    color: #36A0FF;
+    font-size: 50px;
+    padding: 10px;
+}
+
+
+
+.form-group select {
+    height: 42px;
+    font-size: 18px;
+    border:0;
+    padding-left: 54px;
+    border-radius: 5px;
+}
+.form-group input{
+    height: 42px;
+    font-size: 18px;
+    border:0;
+    padding-left: 54px;
+    border-radius: 5px;
+}
+.form-group::before{
+    font-family: "Font Awesome\ 5 Free";
+    position: absolute;
+    left: 25px;
+    font-size: 22px;
+    padding-top:5px;
+    color: #36A0FF;
+}
+
+.form-group#fdni::before{
+    content: "\f5ab";
+}
+
+.form-group#fpac::before{
+    content: "\f728";
+}
+.form-group#fdoctor::before{
+    content: "\f82f";
+}
+.form-group#fespe:before{
+    content: "\f478";
+}
+.form-group#ffecha:before{
+    content: "\f073";
+}
+

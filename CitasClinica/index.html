@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Clinica</title>
+    <link rel="stylesheet" href="./librerias/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./librerias/fontawesome/css/solid.min.css">
+    <link rel="stylesheet" href="./librerias/DataTables/datatables.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    <div class="container-fluid">
+
+
+        <form class="frm">
+            <fieldset>
+                <legend class="text-center header">Clinica</legend>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="row">
+                            <div class="form-group col-md-6" id="fdni">
+
+                                <input id="dni" name="dni" type="text" placeholder="DNI Paciente" class="form-control">
+
+                            </div>
+                            <div class="col-1">
+                                <button class="btn btn-outline-primary buscar" type="button">
+
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+ 
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-6" id="fpac">
+                                <input id="nomPac" name="nomPac" type="text"
+                                    placeholder="Nombre y Apellidos del paciente" class="form-control" disabled>
+
+                            </div>
+                            <div class="col-1">
+                                <button id="citas" class="btn btn-outline-success" type="button" disabled>Ver
+                                    Citas</button>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6" id="fespe">
+                                <select id="especialidad" name="espe" class="form-control">
+                                    <option value=""> Seleccionar especialidad...</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6" id="fdoctor">
+
+                                <select id="medico" name="med" class="form-control">
+                                    <option value="">Seleccionar medico...</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6" id="ffecha">
+
+                                <input id="fecha" name="fecha" type="date" placeholder="Fecha Cita"
+                                    class="form-control">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6" id="horas">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6 text-center">
+                                <button type="submit" class="boton btn btn-primary btn-lg">Guardar</button>
+                                <button id="cancelar" type="button" class="btn btn-secondary btn-lg">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div id="table"></div>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+
+
+
+    
+    <script src="./librerias/jquery/jquery-3.4.1.min.js"></script>
+    <script src="./librerias/sweetAlert/sweetalert2.all.min.js"></script>
+    <script src="./librerias/jquery-validation/jquery.validate.min.js"></script>
+    <script src="./librerias/fontawesome/js/all.min.js"></script>
+    <script src="./librerias/dataTables/datatables.min.js"></script>
+    <script src="./librerias/crearXMLHTTP.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
